@@ -1,0 +1,83 @@
+#chat_box {
+    background-color: #1e3a8a;
+    width: 100%;
+    max-width: 600px;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+#chat_box header {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #93c5fd; 
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 1em;
+    margin: 0;
+}
+
+ul li,
+h5 {
+    list-style: none;
+    margin: 0;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #3b82f6; 
+    padding: 0.8em 1em;
+    border-radius: 1em;
+    align-self: flex-end;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.input_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.input_area input::placeholder {
+    font-style: italic;
+    color: #64748b;
+}
+
+.input_area input {
+    font-size: 1em;
+    border: none;
+    background-color: #e0edff;
+    color: #0f172a;
+    width: 80%;
+    padding: 0.8em 0.5em;
+    border-radius: 0.5em 0 0 0.5em;
+    outline: none;
+}
+
+.input_area button {
+    color: white;
+    font-size: 1em;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: #1e40af;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input_area button:hover {
+    background-color: #2563eb;
+}

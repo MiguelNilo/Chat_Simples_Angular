@@ -1,0 +1,19 @@
+
+ <main id="chat_box">
+            <header>
+                <h3>Atendimento Online</h3>
+            </header>
+            <div class="messages_area">
+                <ul>
+                   <li *ngFor="let message of listMessage" class="mensagem">
+                    <label for="user_message">Você diz:</label>
+                    <h5 id="user_message">{{message}}</h5>
+                  </li>
+                </ul>
+            </div>
+            <div class="input_area">
+                <input type="text" 
+                name="text" 
+                [(ngModel)]="text" />
+                <button (click)="addMessage()">Send</button>
+              <router-outlet />
